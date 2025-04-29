@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "88592397-31cd-4deb-afcb-0ded2bc8775d",
+		"name": "Ejercicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41477858"
+	},
+	"item": [
+		{
+			"name": "Validar contraseña",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "Est0EsUn4Clave!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convertir-Romano",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "romano",
+							"value": "XIV",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/romano",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"romano"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conversor de temperatura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "valor",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "unidad",
+							"value": "C",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/temperatura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"temperatura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generador de contraseña",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "longitud",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "mayusculas",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "numeros",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "simbolos",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/generador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"generador"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
